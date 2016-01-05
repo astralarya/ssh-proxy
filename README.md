@@ -8,7 +8,7 @@ Add `ssh-proxy` to your PATH.
 
 ## Usage
 
-ssh-proxy CONNECTION [PORT] [OPTION...]
+**ssh-proxy** *CONNECTION* *[PORT]* *[OPTION...]*
 
 Options
 * __-\*__ : forward option to SSH (see `man ssh`)

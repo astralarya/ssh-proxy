@@ -48,13 +48,13 @@ done
 
 if [ "$state" = "help" -o -z "$conn" ]
 then
-	\printf 'Usage: ssh-proxy [CONNECTION] [LOCALPORT] [OPTION]
+	\printf 'Usage: %q [CONNECTION] [LOCALPORT] [OPTION]
 Start an SSH proxy via CONNECTION (eg. USER@HOST:PORT) on localhost:LOCALPORT (default 9999).
 Option		Meaning
 -*			SSH option (see `man ssh`)
 -h			Show this message
-'
-	return 0
+' "$(\basename "$0")"
+	exit
 fi
 
 if [ -z "$port" ]
